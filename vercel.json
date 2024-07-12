@@ -1,4 +1,10 @@
 {
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/api/$1" },
+      { "handle": "filesystem" },
+      { "src": "/(.*)", "dest": "/$1" }
+    ],
+
     "version": 2,
     "builds": [
       {
@@ -7,6 +13,6 @@
       }
     ],
     "env": {
-      "NODE_VERSION": "Node.js 20"
+      "NODE_VERSION": "20.x"
     }
   }
