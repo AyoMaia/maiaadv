@@ -10,7 +10,7 @@ import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
 import background from '@/images/background-hero.jpg'
 import { Services } from '@/components/Services'
-
+import { About } from '@/components/About'
 
 export default function Home() {
   return (
@@ -22,15 +22,10 @@ export default function Home() {
       
       <Hero />
       <main>
-       
-        
-        
         <Services />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
+        <About />
         <CallToAction />
         <Testimonials />
-        <Pricing />
         <Faqs />
       </main>
       <Footer />
