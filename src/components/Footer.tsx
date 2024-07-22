@@ -12,8 +12,8 @@ export function Footer() {
           <Logo className="mx-auto h-10 w-auto" />
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
+              <NavLink href="#about">Sobre</NavLink>
+              <NavLink href="#services">Serviços</NavLink>
               <NavLink href="#pricing">Pricing</NavLink>
             </div>
           </nav>
@@ -42,6 +42,7 @@ export function Footer() {
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
             Copyright &copy; {new Date().getFullYear()} Maia Advocacia, todos os direitos reservados
           </p>
+          <p className='text-slate-500 text-sm'>Desenvolvido por WebCode</p>
         </div>
       </Container>
     </footer>

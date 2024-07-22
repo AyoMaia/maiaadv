@@ -87,8 +87,8 @@ function MobileNavigation() {
           
         >
           <PopoverPanel className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5">
-            <MobileNavLink href="#features">Sobre</MobileNavLink>
-            <MobileNavLink href="#testimonials">Serviços</MobileNavLink>
+            <MobileNavLink href="#about">Sobre</MobileNavLink>
+            <MobileNavLink href="#services">Serviços</MobileNavLink>
             <MobileNavLink href="#pricing">Contato</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <Button href="/register" color="blue">
@@ -115,8 +115,8 @@ export function Header() {
             
           </div>
           <div className="md:visible invisible md:flex md:gap-x-6 flex items-center justify-center">
-              <NavLink href="#features">Sobre</NavLink>
-              <NavLink href="#testimonials">Serviços</NavLink>
+              <NavLink href="#about">Sobre</NavLink>
+              <NavLink href="#services">Serviços</NavLink>
               <NavLink href="#pricing">Contato</NavLink>
             </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
