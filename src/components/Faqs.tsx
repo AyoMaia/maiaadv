@@ -6,53 +6,53 @@ import backgroundImage from '@/images/dark-background.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'O que é Direito Tributário?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'O Direito Tributário é a área do Direito que se ocupa das normas e regras que regulam a arrecadação de tributos pelo Estado e a relação entre contribuintes e o fisco. Ele abrange questões sobre impostos, taxas, contribuições e todas as obrigações fiscais dos cidadãos e empresas.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'O que fazer se eu recebi uma notificação de dívida tributária?',
+      answer: 'Se você receber uma notificação de dívida tributária, é importante consultar um advogado especializado para entender a natureza da dívida e as opções disponíveis. Muitas vezes, é possível negociar um parcelamento ou contestar a dívida com base em erros ou irregularidades',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'Como posso reduzir a carga tributária de minha empresa de forma legal?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'A redução da carga tributária deve ser feita de acordo com a legislação vigente. Um advogado tributário pode ajudar a identificar oportunidades de planejamento tributário, como optar por regimes fiscais mais vantajosos, explorar incentivos fiscais e revisar a estrutura tributária da empresa.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'Qual a diferença entre planejamento tributário e sonegação fiscal?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        'O planejamento tributário é uma prática legal que visa organizar a estrutura fiscal para pagar menos impostos, respeitando a legislação. A sonegação fiscal, por outro lado, é ilegal e envolve a omissão ou falsificação de informações para evitar o pagamento de tributos.',
     },
     {
       question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+        'O que é a prescrição tributária e como ela afeta minhas obrigações fiscais?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        ' A prescrição tributária é o prazo legal após o qual o Estado perde o direito de cobrar uma dívida tributária. Esse prazo varia de acordo com o tipo de tributo, mas geralmente é de 5 anos. É importante monitorar os prazos para garantir que seus direitos sejam respeitados.',
     },
     {
       question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+        'Posso contestar uma decisão administrativa do fisco?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        ' Sim, você pode contestar uma decisão administrativa do fisco por meio de recursos administrativos e, se necessário, judicialmente. Um advogado especializado pode orientá-lo sobre os melhores passos e estratégias para defender seus interesses.',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'O que é a compensação de tributos?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        ' A compensação de tributos é um mecanismo que permite que créditos tributários sejam utilizados para pagar débitos tributários. Isso pode ocorrer quando uma empresa ou contribuinte tem valores a receber do fisco que podem ser utilizados para quitar outras obrigações fiscais.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: 'Quais são os direitos dos contribuintes em uma fiscalização tributária?',
+      answer: 'Durante uma fiscalização tributária, os contribuintes têm direitos como ser informado sobre o motivo da fiscalização, ter acesso aos documentos e informações coletadas, e ser ouvido antes de qualquer decisão que afete suas obrigações tributárias. É fundamental que um advogado esteja presente para garantir que seus direitos sejam respeitados.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question: 'Como um advogado tributário pode ajudar a minha empresa?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'Um advogado tributário pode ajudar sua empresa a garantir conformidade com a legislação fiscal, planejar e estruturar a carga tributária de forma eficiente, representar a empresa em litígios fiscais, e fornecer consultoria para a melhor estratégia tributária. A assistência profissional pode evitar problemas legais e otimizar os custos tributários.',
     },
   ],
 ]
@@ -60,7 +60,7 @@ const faqs = [
 export function Faqs() {
   return (
     <section
-      id="faq"
+      id="faqs"
       aria-labelledby="faq-title"
       className="relative overflow-hidden bg-black py-20 sm:py-32"
     >
@@ -74,8 +74,7 @@ export function Faqs() {
             Perguntas Frequentes
           </h2>
           <p className="mt-4 text-lg tracking-tight text-gray-500">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+            Clientes de diversas partes do país compartilharam suas experiências positivas com nosso escritório de advocacia. Veja o que eles têm a dizer.
           </p>
         </div>
         <ul

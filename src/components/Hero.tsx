@@ -21,7 +21,7 @@ export function Hero() {
         Defendendo seus interesses tributários com a mais alta competência e atenção
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register" className='text-xl'>Solicitar Consultoria </Button>
+        <Button href="https://wa.me/554892036767" target="_blank" className='text-xl'>Solicitar Consultoria </Button>
       </div>
       
     </Container>

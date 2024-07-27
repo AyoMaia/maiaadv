@@ -6,24 +6,25 @@ import avatarImage2 from '@/images/avatars/avatar-2.png'
 import avatarImage3 from '@/images/avatars/avatar-3.png'
 import avatarImage4 from '@/images/avatars/avatar-4.png'
 import avatarImage5 from '@/images/avatars/avatar-5.png'
+import avatarImage6 from '@/images/avatars/avatar-6.jpg'
 
 const testimonials = [
   [
     {
       content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        'Recomendo fortemente! A abordagem personalizada e o profundo conhecimento em direito tributário do Dr. Jorge Maia fizeram toda a diferença para o meu caso.',
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        name: 'Fernanda Costa',
+        role: 'Administradora',
         image: avatarImage1,
       },
     },
     {
       content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
+        'Advogado incrível! O Dr. Jorge Maia resolveu meu caso com muita competência e sempre estava disponível para ajudar. Confiança total no trabalho dele.',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: 'Luciana Almeida',
+        role: 'Arquiteta',
         image: avatarImage4,
       },
     },
@@ -31,19 +32,19 @@ const testimonials = [
   [
     {
       content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+        'Serviço excepcional! O Dr. Jorge Maia foi extremamente competente e solucionou minhas questões tributárias de forma rápida e eficiente.',
       author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
+        name: 'João Pereira',
+        role: 'Empresário',
         image: avatarImage5,
       },
     },
     {
       content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
+        'Profissional dedicado e atencioso. O Maia esclareceu todas as minhas dúvidas e me ajudou a economizar significativamente nos impostos.',
       author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
+        name: 'Renata Oliveira',
+        role: 'Artista',
         image: avatarImage2,
       },
     },
@@ -51,20 +52,20 @@ const testimonials = [
   [
     {
       content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
+        'Excelente experiência! O suporte contínuo e a habilidade técnica do Jorge Maia foram fundamentais para resolver meus problemas tributários.',
       author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
+        name: 'Ricardos Santos',
+        role: 'Médico',
         image: avatarImage3,
       },
     },
     {
       content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
+        'Muito satisfeita com o atendimento! O profissional é altamente qualificado e me proporcionou uma excelente consultoria fiscal.',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
+        name: 'Maria Oliveira',
+        role: 'Empresaria',
+        image: avatarImage6,
       },
     },
   ],
@@ -88,12 +89,10 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-yellow-500 sm:text-4xl">
-            Loved by businesses worldwide.
+            O Que Nossos Clientes Dizem
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-400">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
+            Clientes de diversas partes do país compartilharam suas experiências positivas com nosso escritório de advocacia. Veja o que eles têm a dizer.
           </p>
         </div>
         <ul
@@ -119,10 +118,10 @@ export function Testimonials() {
                           />
                         </div>
                         <div>
-                          <div className="font-display text-base text-slate-300 text-center">
+                          <div className="font-semibold text-base m-2 text-slate-300 text-center">
                             {testimonial.author.name}
                           </div>
-                          <div className="mt-1 text-sm text-slate-400">
+                          <div className="mt-1 text-center text-sm text-slate-400">
                             {testimonial.author.role}
                           </div>
                         </div>

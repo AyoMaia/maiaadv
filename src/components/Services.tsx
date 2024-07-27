@@ -52,7 +52,7 @@ export function Services() {
 
                                 
 
-                                <Button href="/register" color="blue">
+                                <Button href="https://wa.me/554892036767" target="_blank" color="blue">
                                     <span >
                                         Falar Sobre
                                     </span>

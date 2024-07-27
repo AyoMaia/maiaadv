@@ -89,9 +89,9 @@ function MobileNavigation() {
           <PopoverPanel className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5">
             <MobileNavLink href="#about">Sobre</MobileNavLink>
             <MobileNavLink href="#services">Serviços</MobileNavLink>
-            <MobileNavLink href="#pricing">Contato</MobileNavLink>
+            <MobileNavLink href="#faqs">Dúvidas</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
-            <Button href="/register" color="blue">
+            <Button href="https://wa.me/554892036767" target="_blank" color="blue">
               <span className='md:text-base text-xs'>
                 Entrar em Contato
               </span>
@@ -117,10 +117,10 @@ export function Header() {
           <div className="md:visible invisible md:flex md:gap-x-6 flex items-center justify-center">
               <NavLink href="#about">Sobre</NavLink>
               <NavLink href="#services">Serviços</NavLink>
-              <NavLink href="#pricing">Contato</NavLink>
+              <NavLink href="#faqs">Dúvidas</NavLink>
             </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button href="/register" color="blue" className='md:visible invisible'>
+            <Button href="https://wa.me/554892036767" target="_blank" color="blue" className='md:visible invisible'>
               <span className='md:text-base text-xs'>
                 Entrar em <span className="hidden lg:inline">Contato</span>
               </span>

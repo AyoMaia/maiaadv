@@ -26,7 +26,7 @@ export function CallToAction() {
           <p className="mt-4 text-lg tracking-tight text-white">
           Nossa equipe de advogados especializados oferece soluções jurídicas eficazes e personalizadas em Direito Tributário. Com experiência e compromisso com a excelência, ajudamos você a navegar pelas complexidades fiscais e garantir a segurança do seu patrimônio. Entre em contato e veja como podemos atender às suas necessidades.
           </p>
-          <Button href="/register" color="white" className="mt-10">
+          <Button href="https://wa.me/554892036767" target="_blank" color="white" className="mt-10">
             Falar com a nossa equipe
           </Button>
         </div>
