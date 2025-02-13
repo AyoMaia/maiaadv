@@ -10,11 +10,17 @@ import {
   TransitionChild,
 } from '@headlessui/react'
 import clsx from 'clsx'
+import { motion } from 'framer-motion'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
+
+const headerVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
 
 function MobileNavLink({
   href,
@@ -105,7 +111,11 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-6">
+    <motion.header className="py-6"
+    initial="hidden"
+    animate="visible"
+    variants={headerVariants}
+    >
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center ">
@@ -122,7 +132,7 @@ export function Header() {
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <Button href="https://wa.me/554892036767" target="_blank" color="blue" className='md:visible invisible'>
               <span className='md:text-base text-xs'>
-                Entrar em <span className="hidden lg:inline">Contato</span>
+                Entrar em <span className="hidden lg:inline">contato</span>
               </span>
             </Button>
             <div className="-mr-1 md:hidden">
@@ -131,6 +141,6 @@ export function Header() {
           </div>
         </nav>
       </Container>
-    </header>
+    </motion.header>
   )
 }

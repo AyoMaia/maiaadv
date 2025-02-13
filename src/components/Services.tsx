@@ -1,6 +1,8 @@
 'use client'
 
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { KeyframeOptions } from 'framer-motion'
 
 import diagnosticoIcon from '@/images/icons/diagnostico.png'
 import reducaoIcon from '@/images/icons/reducao.png'
@@ -22,23 +24,36 @@ const services = [
     {
         title:'Redução Tributária',
         image: reducaoIcon ,
-        description:'Redução e aproveitamento de crédito de despesas de serviços não considerados no diagnósticos tributário (PIS, CONFINS, ipi, iss, icms), se torna uma necessidade vantajosa para as empresas.',
+        description:'Redução e aproveitamento de crédito de despesas de serviços não considerados no diagnósticos tributário (PIS, CONFINS, ipi, iss, ICMS), se torna uma necessidade vantajosa para as empresas.',
     }
 
  ]
 ]
+
 
 export function Services() {
     return (
         <section id='services'>
             <div>
                 <div className='bg-black/50 flex gap-10 py-28 flex-col'>
-                <div><h1 className='text-center text-white text-4xl font-bold mb-8'>Nossos Serviços</h1></div>
+                <motion.div
+                initial= {{ opacity: 0 }}
+                whileInView= {{ opacity: 1}}
+                transition={{ duration: 1.2 }}
+                viewport={{ once: true }}
+                >
+                    <h1 className='text-center text-white text-4xl font-bold mb-8'>Nossos serviços</h1>
+                </motion.div>
                 {services.map((column, columnIndex) => (
                     <div key={columnIndex} className='gap-10 w-full flex items-center justify-center'>
                         <div role="list" className="gap-y-8 md:w-9/12 w-11/12 gap-x-10 flex md:flex-row flex-col md:ml-0 ml-10">
-                            {column.map((services, faqIndex) => (
-                            <div key={faqIndex} className='md:w-1/3 w-11/12 h-[35rem] bg-black/90 p-10 shadow-md shadow-black drop-shadow-2xl justify-between flex flex-col gap-y-10'>
+                            {column.map((services, serviceIndex) => (
+                            <motion.div key={serviceIndex}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 1.3, delay: serviceIndex * 0.3 }}
+                            viewport={{ once: true }}
+                            className='md:w-1/3 w-11/12 h-[35rem] bg-black/95 p-10 rounded-lg shadow-md shadow-black drop-shadow-2xl justify-between flex flex-col gap-y-10'>
 
                                 <nav>
                                     <div className='flex items-center justify-center my-6'><Image src={services.image} alt='icone tributario' width={70} height={100}></Image></div>
@@ -58,7 +73,7 @@ export function Services() {
                                     </span>
                                 </Button>
 
-                            </div>
+                            </motion.div>
                             ))}
                         </div>
                     </div>
