@@ -12,9 +12,9 @@ const textVariants = {
 
 export function Hero() {
   return (
-    <Container className="pb-36 pt-10 text-center lg:pt-12">
+    <Container className="md:pb-36 pb-72 pt-10 text-center lg:pt-12">
       <motion.h1
-        className="mx-auto max-w-4xl font-display text-2xl font-medium tracking-tight text-gray-100 sm:text-6xl"
+        className="mx-auto max-w-4xl md:mt-2 mt-20 font-display text-2xl font-medium tracking-tight text-gray-100 sm:text-6xl"
         initial="hidden"
         animate="visible"
         custom={0}
